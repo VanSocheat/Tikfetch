@@ -1,0 +1,1 @@
+@extends('layouts.app')@section('content')<div class="container authbox py-5"><h1>Login</h1><form method="post">@csrf<label>Email<input class="form-control mb-3" type="email" name="email" required></label><label>Password<input class="form-control mb-3" type="password" name="password" required></label><button class="btn btn-primary">Login</button></form></div>@endsection
