@@ -1,30 +1,27 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>TikFetch - TikTok Video Downloader</title>
-  <style>
-    body {
-      background: #101014;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    h1 { font-size: 48px; }
-    p { color: #aaa; }
-    a { color: #25f4ee; }
-  </style>
-</head>
-<body>
-  <h1>TikFetch</h1>
-  <p>Public TikTok Video Discovery</p>
-  <p>Our website is under development.</p>
-  <a href="https://github.com/VanSocheat/Tikfetch">
-    View Project on GitHub
-  </a>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikFetch — Public TikTok Video Browser</title><meta name="description" content="Explore public TikTok profile video information when an authorized provider is connected.">
+<style>
+:root{color-scheme:dark;--bg:#0b0c12;--panel:#171923;--line:#303340;--muted:#a5a9bb;--cyan:#4ce7e1;--pink:#ff4b80}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#20283b 0%,var(--bg) 50%);color:#f8f9fd;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit}button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}header{border-bottom:1px solid #292b35;background:#0b0c12cc}nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0}.logo{font-size:24px;font-weight:800;letter-spacing:-1px;text-decoration:none}.logo span{color:var(--cyan)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a{text-decoration:none}.hero{text-align:center;padding:88px 0 56px}.pill{display:inline-block;background:#223038;border:1px solid #34565a;color:var(--cyan);padding:5px 15px;border-radius:99px;font-size:13px}.hero h1{font-size:clamp(36px,6vw,66px);line-height:1.12;letter-spacing:-2px;max-width:850px;margin:25px auto}.hero h1 em{font-style:normal;color:var(--cyan)}.sub{max-width:640px;margin:0 auto 30px;color:var(--muted);font-size:18px}.searchbox{max-width:790px;margin:auto;background:var(--panel);border:1px solid #404354;padding:9px;display:flex;gap:8px;border-radius:17px;box-shadow:0 20px 70px #0005}.searchbox input{min-width:0;flex:1;background:transparent;color:white;border:0;outline:0;padding:13px}.primary{border:0;border-radius:11px;background:var(--cyan);color:#071015;font-weight:800;padding:14px 23px}.notice{font-size:13px;color:var(--muted);margin-top:17px}.status{margin:24px auto;max-width:790px;padding:16px;border-radius:12px;background:#272333;border:1px solid #594256;color:#f8d8e3;text-align:left}.status[hidden],.results[hidden]{display:none}.section{padding:42px 0}.section h2{font-size:30px;letter-spacing:-.8px;margin:0 0 8px}.muted{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:23px}.card .number{display:inline-flex;background:#223b40;color:var(--cyan);width:37px;height:37px;align-items:center;justify-content:center;border-radius:10px;font-weight:800}.card h3{margin:16px 0 7px}.card p{margin:0;color:var(--muted)}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:20px 0}.secondary{background:#262936;color:#f8f9fd;border:1px solid #444859;border-radius:10px;padding:10px 15px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.video{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}.thumb{aspect-ratio:9/11;background:linear-gradient(135deg,#22313e,#3a233b);display:grid;place-items:center;font-size:48px;color:var(--cyan)}.video-body{padding:16px}.video-body h3{margin:0 0 5px;font-size:17px}.video-body p{color:var(--muted);font-size:14px}.video-actions{display:flex;justify-content:space-between;align-items:center;gap:8px}.video-actions button{padding:8px 12px}.faq{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted)}footer{margin-top:70px;border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}.footerline{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}input:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:3px}@media(max-width:750px){.hero{padding-top:65px}.cards,.gallery{grid-template-columns:1fr}.navlinks{gap:12px}.searchbox{flex-direction:column}.searchbox input{width:100%}.primary{width:100%}}
+</style></head><body>
+<header><nav class="wrap"><a href="./" class="logo">◈ Tik<span>Fetch</span></a><div class="navlinks"><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="https://github.com/VanSocheat/Tikfetch" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></nav></header>
+<main><section class="hero wrap"><span class="pill">✦ Independent public-profile video browser</span><h1>Find videos from <em>public TikTok profiles.</em></h1><p class="sub">Paste a public profile link, browse available videos, and download individually when an authorized provider supports it.</p>
+<form class="searchbox" id="lookup"><input id="profile" type="url" required autocomplete="url" placeholder="https://www.tiktok.com/@username" aria-label="Public TikTok profile URL"><button class="primary" type="submit">Find Videos →</button></form>
+<p class="notice">No sign-in needed · Public profiles only · Respect creators' rights</p><div id="status" class="status" role="status" aria-live="polite" hidden></div></section>
+<section id="results" class="wrap section results" hidden><h2>Video gallery</h2><p id="resultinfo" class="muted"></p><div class="toolbar"><button class="secondary" id="selectall" type="button">Select all</button><button class="secondary" id="deselect" type="button">Deselect all</button><span id="selected">0 selected</span></div><div id="gallery" class="gallery"></div></section>
+<section class="wrap section" id="how"><h2>How it works</h2><p class="muted">A simple workflow designed for desktop and mobile.</p><div class="cards"><article class="card"><span class="number">1</span><h3>Paste a profile</h3><p>Enter a valid public TikTok profile URL.</p></article><article class="card"><span class="number">2</span><h3>Browse videos</h3><p>See video thumbnails and captions from an authorized data provider.</p></article><article class="card"><span class="number">3</span><h3>Download individually</h3><p>Download eligible videos one at a time, where permission and media access allow.</p></article></div></section>
+<section class="wrap section" id="faq"><h2>Frequently asked questions</h2>
+<details class="faq"><summary>Can I use TikFetch without an account?</summary><p>Yes. The interface does not require registration.</p></details>
+<details class="faq"><summary>Why aren't videos appearing yet?</summary><p>This GitHub Pages version is frontend-only. A deployed backend and authorized provider must be connected before live video lookup works.</p></details>
+<details class="faq"><summary>Can I download every public video?</summary><p>No. Availability depends on permissions, provider capabilities, and applicable restrictions.</p></details>
+<details class="faq"><summary>Does TikFetch support private profiles?</summary><p>No. TikFetch does not bypass access controls.</p></details>
+<details class="faq"><summary>Is TikFetch affiliated with TikTok?</summary><p>No. TikFetch is an independent project and is not affiliated with TikTok.</p></details></section></main>
+<footer><div class="wrap footerline"><span>© <span id="year"></span> TikFetch · Independent service, not affiliated with TikTok.</span><span>Use only media you are authorized to access and download.</span></div></footer>
+<script>
+'use strict';
+document.getElementById('year').textContent=new Date().getFullYear();
+const form=document.getElementById('lookup'),status=document.getElementById('status');
+function parseProfile(value){let url;try{url=new URL(value)}catch{return null}if(url.protocol!=='https:'||url.hostname.toLowerCase()!=='www.tiktok.com'&&url.hostname.toLowerCase()!=='tiktok.com'||url.username||url.password||url.port)return null;const match=url.pathname.match(/^\/@([A-Za-z0-9._]{2,24})\/?$/);return match?match[1]:null}
+form.addEventListener('submit',e=>{e.preventDefault();const username=parseProfile(document.getElementById('profile').value.trim());status.hidden=false;document.getElementById('results').hidden=true;if(!username){status.textContent='Please enter a valid public TikTok profile URL, such as https://www.tiktok.com/@example';return}status.textContent='Profile @'+username+' recognized. Live video lookup is not yet available: this GitHub Pages site needs a deployed backend connected to an authorized provider. No demo videos or fake downloads are being shown.'});
+document.getElementById('selectall').addEventListener('click',()=>{});document.getElementById('deselect').addEventListener('click',()=>{});
+</script></body></html>
